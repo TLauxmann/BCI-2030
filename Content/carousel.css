@@ -28,10 +28,9 @@ body {
 }
 .carousel-item > img {
   position: absolute;
-  top: 0;
+  top: -75%;
   left: 0;
   min-width: 100%;
-  height: 32rem;
 }
 
 
@@ -88,3 +87,5 @@ body {
     margin-top: 7rem;
   }
 }
+
+/* banner bild anpassen */
