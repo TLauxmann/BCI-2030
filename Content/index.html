@@ -149,11 +149,91 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+        <h2 class="featurette-heading">Arten von Brain Computer Interfaces <span class="text-muted">Informationen</span></h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Typ</th>
+              <th scope="col" colspan='2' class="table-info"> Nichtinvasiv</th>
+              <th scope="col" class="table-warning">Halbinvasiv</th>
+              <th scope="col" colspan='2' class="table-success">Invasiv</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Beispiele</th>
+              <td class="table-info">Kommerzielle EEG-Headsets</td>
+              <td class="table-info">Medizinische EEG (flexible Kappe)</td>
+              <td class="table-warning">Electoticografie (ECoG)</td>
+              <td class="table-success">Mikroelektroden: Utha-Array</td>
+              <td class="table-success">Neuralink</td>
+            </tr>
+            <tr>
+              <th scope="row">Elektroden</th>
+              <td class="table-info">1-16</td>
+              <td class="table-info">32-32-128</td>
+              <td class="table-warning">64, 128 oder 256 pro Implantat</td>
+              <td class="table-success">bis zu 256 pro Implantat</td>
+              <td class="table-success">bis zu 1024</td>
+            </tr>
+            <tr>
+              <th scope="row">räumliche Auflösung</th>
+              <td class="table-info">mehrer Zentimeter</td>
+              <td class="table-info">(Millionen von Neuronen)</td>
+              <td class="table-warning">1-10mm (Hunderttausende Neuronen)</td>
+              <td class="table-success">Local Field Potential (LFP): ca. 0,2 mm (Hundert Neutronen)</td>
+              <td class="table-success">Spikes: einzelne Neuronen</td>
+            </tr>
+            <tr>
+              <th scope="row">Frequenzbereich des Signals</th>
+              <td class="table-info">&lt 100 Hz</td>
+              <td class="table-info"><br/></td>
+              <td class="table-warning">&lt 200 Hz</td>
+              <td class="table-success">&lt 200 Hz</td>
+              <td class="table-success"><br/></td>
+            </tr>
+            <tr>
+              <th scope="row">Signalstärke</th>
+              <td class="table-info">5 - 300&microV</td>
+              <td class="table-info"><br/></td>
+              <td class="table-warning">0,01 - 5 mV</td>
+              <td class="table-success">&lt 1 mV</td>
+              <td class="table-success">5 - 500&microV </td>
+            </tr>
+            <tr>
+              <th scope="row">Anwendungen</th>
+              <td class="table-info">Neurofeedback, Gaming</td>
+              <td class="table-info">Neuroprothesen, Diagnose, Forschung</td>
+              <td class="table-warning">Neuroprothesen, Diagnose</td>
+              <td class="table-success">Neuroprothesen, Tiefenhirnstimulation</td>
+              <td class="table-success"><br/></td>
+            </tr>
+            <tr>
+              <th scope="row">Vorteile</th>
+              <td class="table-info">kein Verletzungsrisiko, schnell installiert, günstig</td>
+              <td class="table-info"><br/></td>
+              <td class="table-warning">höhere Auflösung als nicht-invasive</td>
+              <td class="table-success">höchste Auflösung, kleines Implantat</td>
+              <td class="table-success"><br/></td>
+            </tr>
+            <tr>
+              <th scope="row">Nachteile</th>
+              <td class="table-info" >geringe Signalstärke/Auflösung (schlecht für Lernalgorithmen)</td>
+              <td class="table-info"><br/></td>
+              <td class="table-warning">OP nötig, teuer</td>
+              <td class="table-success">hohes OP-Risiko für Gefäße und Hirngewebe</td>
+              <td class="table-success"><br/></td>
+            </tr>
+            <tr>
+              <th scope="row">Verfügbarkeit</th>
+              <td class="table-info">etabliert</td>
+              <td class="table-info"><br/></td>
+              <td class="table-warning">experimentell/klinisch</td>
+              <td class="table-success">höchste AUflösung, kleines Implantat</td>
+              <td class="table-success"><br/></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
@@ -161,11 +241,11 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 class="featurette-heading">Nicht-Invasive Brain Computer Interface</h2>
+        <p class="lead">Eine der einfachsten Schnittstellen basiert auf der Elektoenzephalografie (EEG). Elektroden auf der Kopfhaut messen das elektrische Feld, das das Gehirn unmittelbar unter dem Schädel erzeugt. Die Muster können Menschen bewusst steuern, wenn sie sich bestimmte Sinneseindrücke, Emotionen oder Handlungen vorstellen oder ausführen. Lernalgorithmen erkennen diese Muster und setzen sie in Befehle für einen Computer oder eine Maschine um. Eine Anwendung ist das Neurofeedback, das kommerziell von manchen Ärzten, Heilpraktikern oder Rehakliniken agbeoten wird. Nutzer sollen mit einem EEG-Headset mit meist wenigern Elektroden Kontrolle über ihre Bewusstseinszustände erlangen. Helfen soll das bei Erkrankungen wie ADHS, Depression oder Bournouton.</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+        <img src=attentive-nurse-touching-wires-checking-them-making-eeg-young-men-looking-calm-careful-doing-necessary-121636744.jpg width="400" height="400">
       </div>
     </div>
 
@@ -173,11 +253,24 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 class="featurette-heading">Halbinvasive Brain Computer Interface</h2>
+        <p class="lead">Das Problem an EEF-Signalen ist, dass diese relativ schwach sind und eine geringe räumliche Auflösung haben. Das macht es Lernalgorithmen schwer, Intentionen des Nutzers zuverlässig zu ernennen. Aus diesem Grund bieten halbinvasive Implantete eine Alternative dazu, die direkt auf die Hirnoberfläche gelegt werden - meist über motorische Hirnbereiche, deren Aktivität Handlungsabsichten anzeigt.  </p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+        <img src=businessman-holding-abstract-brain-icon-digital-marketing-strategy-growtn-investment-business-target-goal-media-technology-148215348.jpg width="400" height="400">
+        <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>!-->
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Invasive Brain Computer Interface</h2>
+        <p class="lead">Eine noch bessere Auflösung gelingt durch invasive BCI's. Dabei kommen oft Utha-Arrays zum Einsatz, nagelbrettartige Implantate, die ein bis zwei Milimieter in die Hirnoberfläche geschoben werden. Sie greifen die Signale direkt von den Hirnzellen ab. Allerdings ist bei solchen Operationen das Risiko von Hirnverletzungen erhöht. Eine weitere Variante invaiver BCIs ist die tiefen Hirnstimulation. Elektroden werden in tief liegende Neuronengruppen gelegt, um deren Aktivität zu provozieren oder zu unterdrücken. Kontrolliert wird dies von einem kleinen Computer, der wie ein Herzschrittmacher unter der Haut getragen wird. </p>
+      </div>
+      <div class="col-md-5">
+        <img src=bulb-future-technology-brain-innovation-background-artificial-intelligence-concept-creative-idea-132826092.jpg width="400" height="400">
       </div>
     </div>
 
