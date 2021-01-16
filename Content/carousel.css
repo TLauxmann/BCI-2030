@@ -28,11 +28,17 @@ body {
 }
 .carousel-item > img {
   position: absolute;
-  top: -75%;
+  top: 0;
   left: 0;
   min-width: 100%;
 }
-
+.banner{
+  background-image: url('../imgs/human-nervous-system.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #555555;
+  background-position: center;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
