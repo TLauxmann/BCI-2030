@@ -39,6 +39,48 @@ body {
   background-color: #555555;
   background-position: center;
 }
+.videosize {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#content {
+    position: relative;
+}
+#content img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+}
+
+
+ /* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 60%;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 8px;
+  background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 8px;
+  height: 200px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 100%;
+  background: #4caf50;
+  width: 8px;
+} 
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
