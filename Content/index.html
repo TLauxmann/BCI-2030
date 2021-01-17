@@ -120,35 +120,13 @@
 
   <div class="container marketing">
 
-    <!-- progress-bar
-            ================================================== -->
-    <!-- progress-bar -->
-
-        <div class="header">
-          <h2>Scroll Indicator</h2>
-          <div class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
-          </div>
-        </div>
-        
-        <script>
-          window.onscroll = function () { myFunction() };
-
-          function myFunction() {
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            document.getElementById("myBar").style.height = scrolled + "%";
-          } 
-        </script>
-
     <!-- video
                 ================================================== -->
     <!-- video -->
 
-    <div class="videosize">
+    <div class="frontpagevideo">
       <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item" src="../videos/mainvid.mp4" allowfullscreen></iframe>
       </div>
     </div>
 
@@ -207,7 +185,7 @@
 
 
     <div class="row featurette">
-      <div class="col-md-7">
+      <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading">Invasive Brain Computer Interface</h2>
         <p class="lead">Eine noch bessere Auflösung gelingt durch invasive BCIs. Dabei kommen oft Utha-Arrays zum Einsatz,
           nagelbrettartige Implantate, die ein bis zwei Milimieter in die Hirnoberfläche geschoben werden. Sie greifen die
@@ -224,9 +202,7 @@
     <hr class="featurette-divider">
 
     <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Arten von Brain Computer Interfaces <span class="text-muted">Informationen </span>
-        </h2>
+        <h2 class="featurette-heading" style="text-align: center;">Informationen über die Arten von <br />Brain Computer Interfaces</h2>
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -311,7 +287,6 @@
             </tr>
           </tbody>
         </table>
-      </div>
       <p>[Jo Schilling, (2021), Hirnschnittstellen, Technology Review, Das Magazin für Innovation, Heise Medien GmbH & Co. KG, Hannover, S. 52 - 53]</p>
     </div>
     <hr class="featurette-divider">
