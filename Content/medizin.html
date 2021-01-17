@@ -171,16 +171,7 @@
       </aside><!-- /.blog-sidebar -->
 
       <!-- /.blog-sidebar -->
-      <script>
-        window.onscroll = function () { scrollfunction() };
 
-        function scrollfunction() {
-          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-          var scrolled = (winScroll / height) * 100;
-          document.getElementById("myBar").style.height = scrolled + "%";
-        } 
-      </script>
       <div id="popup1" class="overlay">
         <div class="popup">
           <h2>Geschichte eines Locked-in Patienten</h2>
@@ -398,17 +389,22 @@
           </div>
         </div>
       </div>
-      <hr class="featurette-divider">
+
+    <div class="col-md-8 blog-main">
+      <div class="blog-post">
+       <hr class="featurette-divider">
       
 
+
       <div class="row featurette">
-        <div class="col-md-7 order-md-2">
+        
+        <div class="col-md-7">
           <h2>Video einer EEG Aufzeichnung</h2>
-          <p > Veranschaulicht die zugrundeliegende Methode zur Klassifikation.
+          <p>Veranschaulicht die zugrundeliegende Methode zur Klassifikation.
             <em>Verwendung des Videos mit der Genehmigung von Dr. Sebastian Nagel, University of Tübingen Department of Computer Science and Computer Engineering</em>
           </p>
         </div>
-        <div class="col-md-5"></div>
+        <div class="col-md-7 order-md-2"></div>
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="../videos/BCI_EEG2Code.mp4" allowfullscreen></iframe>
         </div>
@@ -417,7 +413,7 @@
       <hr class="featurette-divider">
   
       <div class="row featurette">
-        <div class="col-md-7">
+        <div class="col-md-7 order-md-2">
           <h2>Video eines Probanden, der über EEG Buchstaben in den Bildschirm eingibt </h2>
           <p>Dieses Video zeigt den Live-Einsatz des BCI bei einer Schreibanwendung. 
             Es ist bereits geschnitten, die Rohfassung habe ich leider nicht mehr gefunden. 
@@ -431,7 +427,8 @@
               <iframe class="embed-responsive-item" src="../videos/BCI_QWERTZ.mp4" allowfullscreen></iframe>
         </div>
       </div>
-
+      </div>
+    </div>
     </div><!-- /.row -->
     <!-- FOOTER -->
     <footer class="container">
