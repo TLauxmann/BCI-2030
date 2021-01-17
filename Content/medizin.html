@@ -66,6 +66,15 @@
   </header>
 
   <main role="main" class="container">
+
+    <div class="nav-scroller py-1 mb-2"></div>
+
+  
+
+    <!-- blog-post
+            ================================================== -->
+    <!-- cblog-post -->
+
     <div class="row">
       <div class="col-md-8 blog-main">
   
@@ -90,7 +99,44 @@
           <hr>
           <p>Im Folgenden werden verschiedene Menschen und deren Krankheitsgeschichten vorgestellt. Zu jedem Krankheitsverlauf und verwendeten BCI werden noch weitere Informationen 
             hinzugefügt wie beispielsweise welche Forschungen noch durchgeführt werden müssen oder wie Kosten reduziert werden können. </p>
-          <h2>Locked-in Patienten</h2>
+          
+          <!-- container3d
+                                              ================================================== -->
+          <!-- container3d -->
+          <div class="carousel3dcontainer">
+            <div class="container3d">
+              <div id="carousel3d">
+                <div class="item a"><a href="#popup1">A</a></div>
+                <div class="item b"><a href="#popup2">B</a></div>
+                <div class="item c"><a href="#popup3">C</a></div>
+                <div class="item d"><a href="#popup4">D</a></div>
+                <div class="item e"><a href="#popup5">E</a></div>
+                <div class="item f"><a href="#popup6">F</a></div>
+              </div>
+            </div>
+            <div id="next3d" onclick="rotate('n')">Next</div>
+            <div id="prev3d" onclick="rotate('p')">Prev</div>
+          </div>
+          <script>
+            var carousel = document.getElementById("carousel3d")
+            var currdeg = 0;
+
+            function rotate(e) {
+              if (e == "n") {
+                currdeg = currdeg - 60;
+              }
+              if (e == "p") {
+                currdeg = currdeg + 60;
+              }
+              carousel.style.transform = "rotateY(" + currdeg + "deg)"
+            }
+          </script>
+
+          <!-- container3d
+          ================================================== -->
+          <!-- container3d -->
+
+            <h2>Locked-in Patient</h2>
           <p>Eric ist ein 28-jähriger Lehrer, der einen Hirnstamm Schlaganfall erlitten hat. 
             Ein Jahr nach der Erkrankung und trotz intensiver Rehabilitationstherapie ist es ihm nicht möglich sich zu bewegen oder zu sprechen. 
             Lediglich die Muskeln seiner Augen kann er kontrollieren und so über die Augenbewegungen einfache Ja/Nein-Fragen beantworten.
@@ -297,9 +343,74 @@
           </ol>
         </div>
       </aside><!-- /.blog-sidebar -->
-  
+
+      <!-- /.blog-sidebar -->
+      <script>
+        window.onscroll = function () { scrollfunction() };
+
+        function scrollfunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.height = scrolled + "%";
+        } 
+      </script>
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>Here i am</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            Thank to pop me out of that button, but now i'm done so you can close this window.
+          </div>
+        </div>
+      </div>
+      <div id="popup2" class="overlay">
+        <div class="popup">
+          <h2>Here i am</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            Thank to pop me out of that button, but now i'm done so you can close this window.
+          </div>
+        </div>
+      </div>
+      <div id="popup3" class="overlay">
+        <div class="popup">
+          <h2>Here i am</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            Thank to pop me out of that button, but now i'm done so you can close this window.
+          </div>
+        </div>
+      </div>
+      <div id="popup4" class="overlay">
+        <div class="popup">
+          <h2>Here i am</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            Thank to pop me out of that button, but now i'm done so you can close this window.
+          </div>
+        </div>
+      </div>
+      <div id="popup5" class="overlay">
+        <div class="popup">
+          <h2>Here i am</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            Thank to pop me out of that button, but now i'm done so you can close this window.
+          </div>
+        </div>
+      </div>
+      <div id="popup6" class="overlay">
+        <div class="popup">
+          <h2>Here i am</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            Thank to pop me out of that button, but now i'm done so you can close this window.
+          </div>
+        </div>
+      </div>
+
     </div><!-- /.row -->
-  
     <!-- FOOTER -->
     <footer class="container">
       <p class="float-right"><a href="#">Back to top</a></p>
