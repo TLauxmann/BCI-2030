@@ -141,8 +141,8 @@ body {
   background: #000;
   width: 250px;
   height: 200px;
-  line-height: 100px;
-  font-size: 2em;
+  line-height: 50px;
+  font-size: 1em;
   text-align: center;
   color: #FFF;
   opacity: 0.95;
@@ -155,31 +155,33 @@ body {
   height: 100%;
   position: absolute;
   left: 0;
+  color: #000;
+
 }
 
 .a {
   transform: rotateY(0deg) translateZ(250px);
-  background: #ed1c24;
+  background: #c58b8d;
 }
 .b {
   transform: rotateY(60deg) translateZ(250px);
-  background: #0072bc;
+  background: #789eb8;
 }
 .c {
   transform: rotateY(120deg) translateZ(250px);
-  background: #39b54a;
+  background: #89af8e;
 }
 .d {
   transform: rotateY(180deg) translateZ(250px);
-  background: #f26522;
+  background: #af8470;
 }
 .e {
   transform: rotateY(240deg) translateZ(250px);
-  background: #630460;
+  background: #a373a2;
 } 
 .f {
   transform: rotateY(300deg) translateZ(250px);
-  background: #8c6239;
+  background: #7e79c0;
 }
 
 #next3d, #prev3d {
@@ -222,11 +224,11 @@ body {
 }
 
 .popup {
-  top: 50%;
+  top: 10%;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-  width: 30%;
+  width: 80%;
   position: relative;
   transition: all 5s ease-in-out;
   margin-left: auto;
@@ -261,6 +263,7 @@ body {
     width: 70%;
   }
 }
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
