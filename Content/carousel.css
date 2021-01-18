@@ -20,11 +20,12 @@ body {
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
+  color: #B3BCF5;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 20rem;
 }
 .carousel-item > img {
   position: absolute;
@@ -38,6 +39,8 @@ body {
   background-repeat: no-repeat;
   background-color: #555555;
   background-position: center;
+  height: 350px;
+
 }
 .frontpagevideo {
   display: block;
@@ -67,19 +70,6 @@ body {
   background-color: #f1f1f1;
 }
 
-/* The progress container (grey background) */
-.progress-container {
-  width: 8px;
-  height: 200px;
-  background: #ccc;
-}
-
-/* The progress bar (scroll indicator) */
-.progress-bar {
-  height: 100%;
-  background: #4caf50;
-  width: 8px;
-} 
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -141,7 +131,7 @@ body {
   width: 250px;
   height: 200px;
   font-size: 1em;
-  opacity: 0.90;
+  opacity: 0.85;
   text-align: center;
   color: #FFF;
   border-radius: 10px;
@@ -175,27 +165,45 @@ body {
 
 .a {
   transform: rotateY(0deg) translateZ(250px);
-  background: #c58b8d;
+  background: #B7ECEC;
+}
+.a a{
+    color: #00848E
 }
 .b {
   transform: rotateY(60deg) translateZ(250px);
-  background: #789eb8;
+  background: #BBE5B3;
+}
+.b a{
+    color: #108043
 }
 .c {
   transform: rotateY(120deg) translateZ(250px);
-  background: #89af8e;
+  background: #FFEA8A;
+}
+.c a{
+    color: #8A6116
 }
 .d {
   transform: rotateY(180deg) translateZ(250px);
-  background: #af8470;
+  background: #FFC58B;
+}
+.d a{
+    color: #C05717
 }
 .e {
   transform: rotateY(240deg) translateZ(250px);
-  background: #a373a2;
-} 
+  background: #FEAD9A;
+}
+.e a{
+    color: #BF0711
+}
 .f {
   transform: rotateY(300deg) translateZ(250px);
-  background: #7e79c0;
+  background: #E3D0FF;
+}
+.f a{
+    color: #50248F
 }
 
 #next3d, #prev3d {
@@ -217,6 +225,94 @@ body {
 }
 #next3d { right: 1em; }
 #prev3d { left: 1em; }
+
+/* image modal
+-------------------------------------------------- */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 60px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
 
 /* popup
 -------------------------------------------------- */

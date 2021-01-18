@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Jekyll v4.1.1">
-  <title>BCI 2030</title>
+  <title>BCI 2030 - Medizin</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
 
@@ -44,12 +44,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
           <li class="nav-item">
-            
-            <a class="nav-link" href="medizin.html">Medizin</a>
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="medizin.html">Medizin<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="entertainment.html">Entertainment</a>
@@ -188,15 +187,48 @@
                     Textfeld, das den geschriebenen Text anzeigt. Jedes Target ist mit einem eigenen zufälligen Stimulationsmuster
                     moduliert.
                     Während eines Trials wird kontinuierlich ein räumlicher Filter auf das gemessene EEG angewendet.
+                    Weiter Informationen sind in der <a href="https://doi.org/10.1038/s41598-019-44645-x">Veröffentlichung</a> von Sebastian Nagel und Martin Spüler nachzulesen. </br>
                     <em>Mit der Genehmigung von Dr. Sebastian Nagel, University of Tübingen Department of Computer Science and
                       Computer Engineering ist die Verwendung des Videos erlaubt</em>
                   </p>
                 </div>
-                <div class="col-md-7 order-md-2">
+                <div class="col-md-5">
+                  <img id="myImg" src="../imgs/PaperEEGVideo.jpg" alt="EEG" class="img-fluid">
+                  <!-- The Modal -->
+                  <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                  </div>
+                  
+                  <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById("myImg");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function () {
+                      modal.style.display = "block";
+                      modalImg.src = this.src;
+                      captionText.innerHTML = this.alt;
+                    }
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function () {
+                      modal.style.display = "none";
+                    }
+                  </script>
                   <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="../videos/BCI_EEG2Code.mp4" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" src="../videos/BCI_EEG2Code.mp4" allowfullscreen width="100"></iframe>
                   </div>
                 </div>
+                                  
+
               </div>
           
               <hr class="featurette-divider">
@@ -228,7 +260,7 @@
       <div id="popup1" class="overlay">
         <div class="popup">
           <h2>Geschichte eines Locked-in Patienten</h2>
-          <a class="close" href="#">&times;</a>
+          <a class="close" href="#/">&times;</a>
           <div class="content">
             <p>Eric ist ein 28-jähriger Lehrer, der einen Hirnstamm Schlaganfall erlitten hat. 
               Ein Jahr nach der Erkrankung und trotz intensiver Rehabilitationstherapie ist es ihm nicht möglich sich zu bewegen oder zu sprechen. 
@@ -264,7 +296,7 @@
       <div id="popup2" class="overlay">
         <div class="popup">
           <h2>Geschichte einer Patienten, die über ein BCI eine Neuroprothese kontrolliert</h2>
-          <a class="close" href="#">&times;</a>
+          <a class="close" href="#/">&times;</a>
           <div class="content">
             <p>Anna ist eine 39 Jahre alte Bauingenieurin. Vor zwei Jahren arbeitete sie auf einer Baustelle und ein Holzbalken
               traf sie direkt am Hals.  
@@ -295,7 +327,7 @@
       <div id="popup3" class="overlay">
         <div class="popup">
           <h2>Geschichte eines hybriden BCI-gesteuerten FES für die Schlaganfall Rehabilitation </h2>
-          <a class="close" href="#">&times;</a>
+          <a class="close" href="#/">&times;</a>
           <div class="content">
             <p>Maria ist eine 57-jährige Ingenieurin aus Rom, die vor kurzem einen Schlaganfall in der rechten Gehirnhälfte erlitten hat. 
               Drei Monate nach dem Ereignis kann sie mit einem Stock zu gehen. Allerdings hat sie schwere Defizite im linken Arm und in der Hand
@@ -328,7 +360,7 @@
       <div id="popup4" class="overlay">
         <div class="popup">
           <h2>Die Geschichte eines NeuroTutors</h2>
-          <a class="close" href="#">&times;</a>
+          <a class="close" href="#/">&times;</a>
           <div class="content">
             <p> Michael ist in seinem letzten Jahr auf dem Gymnasium. Insgesamt sind seine Noten gut, Schwierigkeiten hatten er allerdings. 
               Auf der Suche nach effizienten Möglichkeiten, auf seine Abschlussprüfungen zu lernen, stößt Michael auf mehrere Unternehmen, 
@@ -357,7 +389,7 @@
       <div id="popup5" class="overlay">
         <div class="popup">
           <h2>Forschungsarbeiten im Bereich der Kommunikation</h2>
-          <a class="close" href="#">&times;</a>
+          <a class="close" href="#/">&times;</a>
           <div class="content">
             <div class="blog-post">
               <p class="blog-post-meta">2018 by Chang-Hee Han and Chang-
@@ -399,7 +431,7 @@
       <div id="popup6" class="overlay">
         <div class="popup">
           <h2>Forschungsarbeiten im Bereich der Rehabilitation</h2>
-          <a class="close" href="#">&times;</a>
+          <a class="close" href="#/">&times;</a>
           <div class="content">
             <div class="blog-post">
               <p class="blog-post-meta">2016 by Ujwal Chaudhary, Niels Birbaumer
